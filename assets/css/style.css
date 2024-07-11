@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: #ddd;
+    height: 200vh;
+}
+.nav-item .text{
+    flex-grow: 1;
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    background-color:#ddd ;
+}
+.line{
+    width: 2px;
+    height: 50px;
+    background-color: #ddd;
+    left: 50%;
+    top: 100%;
+}
+.icon-cross{
+    right: 12px;
+    top: 12px;
+}
+.description{
+    width: 540px;
+    overflow-y: auto;
+}
+@media (max-width: 600px) {
+    .description{
+        width: 100px;
+    }
+}
+@media (max-width: 1024px) {
+    .description{
+        width: 400px;
+        
+    }
+}
