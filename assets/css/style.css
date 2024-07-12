@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
-body{
+
+body {
     font-family: "Kantumruy Pro", sans-serif;
 }
-.logo{
+
+.logo {
     height: 80px;
 }
 
-.circle-customize{
+.circle-customize {
     width: 35px;
     height: 35px;
     background-color: #eee;
     border-radius: 50px;
 }
 
-.radius-customize-pf{
+.radius-customize-pf {
     width: 35px;
     height: 35px;
     border-radius: 100%;
@@ -21,8 +23,23 @@ body{
     overflow: hidden;
 }
 
-.profile{
+.main-profile {
     width: 100%;
     height: 100%;
     border-radius: 100%;
+}
+
+/* List Post */
+.profile {
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
