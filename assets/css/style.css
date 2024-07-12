@@ -1,5 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    font-family: "Kantumruy Pro", sans-serif;
+}
 .logo{
-    width: 10%;
+    height: 80px;
+}
+
+.circle-customize{
+    width: 35px;
+    height: 35px;
+    background-color: #eee;
+    border-radius: 50px;
+}
+
+.radius-customize-pf{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: red;
+    overflow: hidden;
+}
+
+.profile{
+    width: 100%;
     height: 100%;
-    object-fit: cover;
+    border-radius: 100%;
 }

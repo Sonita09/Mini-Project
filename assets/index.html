@@ -13,7 +13,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <!-- <img src="image/logo.png" class="logo" alt="logo"> -->
+                    <img src="image/logo.png" class="logo" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -22,33 +22,48 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
                         <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
                     </form>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <ul class="navbar-nav ms-auto mb-2 gap-4 mb-lg-0">
+                        <li class="nav-item text-center d-flex flex-column justify-content-center align-items-center">
+                            <div class="circle-customize d-flex justify-content-center align-items-center">
+                                <img src="image/nav-icon/home.svg" alt="">
+                            </div>
+                            <a class="nav-link active fw-semibold" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item text-center d-flex flex-column justify-content-center align-items-center">
+                            <div class="circle-customize d-flex justify-content-center align-items-center">
+                                <img src="image/nav-icon/job.svg" alt="">
+                            </div>
+                            <a class="nav-link fw-semibold" aria-current="page" href="#">Jobs</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
+                        <li class="nav-item text-center d-flex flex-column justify-content-center align-items-center">
+                            <div class="circle-customize d-flex justify-content-center align-items-center">
+                                <img src="image/nav-icon/news.svg" alt="">
+                            </div>
+                            <a class="nav-link fw-semibold" href="#">Article</a>
+                        </li>
+                        <li class="nav-item text-center d-flex flex-column justify-content-center align-items-center">
+                            <div class="circle-customize d-flex justify-content-center align-items-center">
+                                <img src="image/nav-icon/notification.svg" alt="">
+                            </div>
+                            <a class="nav-link  fw-semibold" href="#">Notification</a>
+                        </li>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="radius-customize-pf">
+                                <img src="image/profile.jpg" alt="" class="profile">
+                              </div>
+                              <span class="fw-semibold">Me</span>
                             </a>
+                          
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
+                          </div>
                     </ul>
                 </div>
             </div>
