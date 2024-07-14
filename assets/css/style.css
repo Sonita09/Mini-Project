@@ -9,7 +9,7 @@ body {
     height: 80px;
 }
 
-.form-search-customize{
+.form-search-customize {
     width: 400px;
     height: 40px;
 }
@@ -23,11 +23,11 @@ body {
     background-color: #249FDA!important;
 } */
 
-.nav-item:hover .title-header{
-    color: #249FDA!important;
+.nav-item:hover .title-header {
+    color: #249FDA !important;
 }
 
-.profile-dropdown{
+.profile-dropdown {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -40,32 +40,37 @@ body {
     object-fit: cover;
 }
 
-.dropdown-customize{
-    left: -100px!important;
+.dropdown-customize {
+    left: -100px !important;
 }
 
 /**/
-.fs-small{
+.fs-small-customize {
     font-size: 14px;
     opacity: 0.9;
 }
-.color{
+
+.color {
     color: #0CBC87;
 }
-.nav-item .nav-link{
+
+.nav-item .nav-link-customize {
     width: 70px;
 }
-.active{
-    color:#249FDA!important;
+
+.active-border-bottom-customize {
+    color: #249FDA !important;
     border-bottom: 3px solid #249FDA !important;
 }
 
-.pf img{
+.pf img {
     width: 100%;
     object-fit: cover;
 }
-.btn-create{
+
+.btn-create {
     width: 94.5%;
+}
 
 /* List Post */
 .profile {
@@ -75,37 +80,42 @@ body {
     border-radius: 50%;
     overflow: hidden;
 }
+
 .profile img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.fa-user-group{
+
+.fa-user-group {
     font-size: 10px;
-} 
-.post img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-}
-.post-fead{
-   height: 400px;
-}
-.post-fead img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    
-}
-.card{
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.skeleton-avatar{
-    height: 150px;
 }
 
- 
+.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.post-fead {
+    height: 400px;
+}
+
+.post-fead img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.card {
+    border: none;
+    border-radius: 10px!important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)!important;
+}
+
+.skeleton-avatar {
+    height: 150px;
+}
