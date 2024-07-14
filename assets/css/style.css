@@ -44,6 +44,29 @@ body {
     left: -100px!important;
 }
 
+/**/
+.fs-small{
+    font-size: 14px;
+    opacity: 0.9;
+}
+.color{
+    color: #0CBC87;
+}
+.nav-item .nav-link{
+    width: 70px;
+}
+.active{
+    color:#249FDA!important;
+    border-bottom: 3px solid #249FDA !important;
+}
+
+.pf img{
+    width: 100%;
+    object-fit: cover;
+}
+.btn-create{
+    width: 94.5%;
+
 /* List Post */
 .profile {
     width: 70px;
