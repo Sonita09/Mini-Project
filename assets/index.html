@@ -1,118 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini-Project.Group-2</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-white">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="image/logo.png" class="logo" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0 shadow-none ms-auto" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasToggle" aria-controls="offcanvasToggle" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
-                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-                    </form>
-                    <ul class="navbar-nav ms-auto mb-2 gap-4 mb-lg-0">
-                        <li class="nav-item text-center d-flex flex-column justify-content-center align-items-center">
-                            <div class="circle-customize d-flex justify-content-center align-items-center">
-                                <img src="image/nav-icon/home.svg" alt="">
+                <div class="offcanvas offcanvas-start" id="offcanvasToggle">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Setting</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form class="d-flex align-items-center" role="search">
+                            <div class="input-group form-search-customize mb-3 mb-lg-0">
+                                <span class="input-group-text border-0 bg-secondary-subtle" id="basic-addon1">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
+                                <input class="form-control fw-semibold border-0 bg-secondary-subtle shadow-none"
+                                    type="search" placeholder="Search here..." aria-label="Search">
                             </div>
-                            <a class="nav-link active fw-semibold stretched-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item text-center d-flex flex-column justify-content-center align-items-center">
-                            <div class="circle-customize d-flex justify-content-center align-items-center">
-                                <img src="image/nav-icon/job.svg" alt="">
-                            </div>
-                            <a class="nav-link fw-semibold stretched-link" aria-current="page" href="#">Jobs</a>
-                        </li>
-                        <li class="nav-item text-center d-flex flex-column justify-content-center align-items-center">
-                            <div class="circle-customize d-flex justify-content-center align-items-center">
-                                <img src="image/nav-icon/news.svg" alt="">
-                            </div>
-                            <a class="nav-link fw-semibold stretched-link" href="#">Article</a>
-                        </li>
-                        <li class="nav-item text-center d-flex flex-column justify-content-center align-items-center">
-                            <div class="circle-customize d-flex justify-content-center align-items-center">
-                                <img src="image/nav-icon/notification.svg" alt="">
-                            </div>
-                            <a class="nav-link fw-semibold stretched-link" href="#">Notification</a>
-                        </li>
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <div class="radius-customize-pf">
-                                    <img src="image/profile.jpg" alt="" class="main-profile">
-                                </div>
-                                <span class="fw-semibold">Me</span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </ul>
+                        </form>
+                        <ul class="navbar-nav ms-auto mb-2 gap-4 mb-lg-0 align-items-start align-items-lg-center">
+                            <li class="nav-item me-4">
+                                <a class="nav-link active text-info d-flex flex-row flex-lg-column justify-content-start justify-content-lg-center align-items-center"
+                                    href="#">
+                                    <div
+                                        class="icon-circle bg-secondary-subtle rounded-5 d-flex justify-content-center align-items-center">
+                                        <img src="image/nav-icon/home.svg" alt="home-icon">
+                                    </div>
+                                    <div class="title-header fw-semibold ms-3 ms-lg-0">
+                                        Home
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link d-flex flex-row flex-lg-column justify-content-start justify-content-lg-center align-items-center"
+                                    href="#">
+                                    <div
+                                        class="icon-circle bg-secondary-subtle rounded-5 d-flex justify-content-center align-items-center">
+                                        <img src="image/nav-icon/job.svg" alt="home-icon">
+                                    </div>
+                                    <div class="title-header fw-semibold ms-3 ms-lg-0">
+                                        Jobs
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex flex-row flex-lg-column justify-content-start justify-content-lg-center align-items-center"
+                                    href="#">
+                                    <div
+                                        class="icon-circle bg-secondary-subtle rounded-5 d-flex justify-content-center align-items-center">
+                                        <img src="image/nav-icon/news.svg" alt="home-icon">
+                                    </div>
+                                    <div class="title-header fw-semibold ms-3 ms-lg-0">
+                                        Article
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex flex-row flex-lg-column justify-content-start justify-content-lg-center align-items-center"
+                                    href="#">
+                                    <div
+                                        class="icon-circle bg-secondary-subtle rounded-5 d-flex justify-content-center align-items-center">
+                                        <img src="image/nav-icon/notification.svg" alt="home-icon">
+                                    </div>
+                                    <div class="title-header fw-semibold ms-3 ms-lg-0">
+                                        Notification
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="btn d-flex flex-column justify-content-center align-items-center border-0 position-relative" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div
+                                class="icon-circle profile-dropdown bg-secondary-subtle rounded-5 d-flex justify-content-center align-items-center">
+                                <img src="image/profile.jpg" alt="" class="main-profile">
+                            </div>
+                            <div class="fw-semibold dropdown-toggle text-dark-emphasis d-none d-lg-block">
+                                Me
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu show position-absolute dropdown-customize">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i>Setting</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
     <main>
         <div class="container my-5">
-            <div class="row">
-                <div class="col-12 col-lg-8 ">
-                    <!-- list post and loading -->
-                    <section>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-12 col-lg-8 ">
+                        <!-- list post and loading -->
+                        <section>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">
 
-                                    <div class=" d-flex justify-content-between">
-                                        <div class="d-flex p-3 align">
-                                            <div class="profile">
-                                                <img src="image/profile.jpg" alt="profile">
+                                        <div class=" d-flex justify-content-between">
+                                            <div class="d-flex p-3 align">
+                                                <div class="profile">
+                                                    <img src="image/profile.jpg" alt="profile">
 
+                                                </div>
+                                                <div class=" profile-name m-3 fs-4">
+                                                    <p>Lori Fergunson</p>
+                                                    <p class="fs-6">just now <i class="fa-solid fa-user-group"></i></p>
+
+                                                </div>
                                             </div>
-                                            <div class=" profile-name m-3 fs-4">
-                                                <p>Lori Fergunson</p>
-                                                <p class="fs-6">just now <i class="fa-solid fa-user-group"></i></p>
-
+                                            <div class="icon-aellipsis m-3 fs-6">
+                                                <i class="fa-solid fa-ellipsis"></i>
                                             </div>
                                         </div>
-                                        <div class="icon-aellipsis m-3 fs-6">
+                                    </h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
+                                        est
+                                        quas, assumenda voluptas, perferendis rerum facilis minima pariatur fugiat
+                                        quisquam
+                                        adipisci. Suscipit iusto voluptatum praesentium repudiandae culpa aspernatur
+                                        consequatur eius.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 mt-4 mt-lg-0 col-lg-4">
+                        <section class="about">
+                            <div class="card border-0 rounded-4">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <div class="d-flex justify-content-between">
+                                            <h5>About</h5>
                                             <i class="fa-solid fa-ellipsis"></i>
                                         </div>
+                                        <p class="card-text mb-3">
+                                            This group is for students of FE Generation in Afternoon Class - The goal of
+                                            creating
+                                            this group is to share any information of our study
+                                        </p>
                                     </div>
-                                </h5>
-                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam est
-                                    quas, assumenda voluptas, perferendis rerum facilis minima pariatur fugiat quisquam
-                                    adipisci. Suscipit iusto voluptatum praesentium repudiandae culpa aspernatur
-                                    consequatur eius.</p>
+                                    <div>
+                                        <h5>Private</h5>
+                                        <p class="card-text mb-3">Only members can see who's in the group and what they
+                                            post.</p>
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col-1">
+                                            <i class="fa-solid fa-users"></i>
+                                        </div>
+                                        <div class="col-11">
+                                            <span>12 members</span>
+                                        </div>
+                                        <div class="col-1">
+                                            <i class="fa-solid fa-users"></i>
+                                        </div>
+                                        <div class="col-11">
+                                            <span>6 online</span>
+                                        </div>
+                                        <div class="col-1">
+                                            <i class="fa-regular fa-newspaper"></i>
+                                        </div>
+                                        <div class="col-11">
+                                            <span>1 posted</span>
+                                        </div>
+                                        <div class="col-1">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                        </div>
+                                        <div class="col-11">
+                                            <span>Created 01 Jan 2024 by Chet</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
+                        <section class="admin-tool mt-4">
+                            <div class="card border-0 rounded-4">
+                                <div class="card-body">
+                                    <h5 class="mb-2">Admin Tool</h5>
+                                    <ul class="list-unstyled mb-0 p-0 ms-2">
+                                        <li class="nav-item mb-3"><a href="#"
+                                                class="nav-link d-flex align-items-center fw-medium"><i
+                                                    class="bi bi-people fs-4 pe-2"></i>Manage members</a></li>
+                                        <li class="nav-item mb-3"><a href="#"
+                                                class="nav-link d-flex align-items-center fw-medium"><i
+                                                    class="bi bi-person-plus fs-4 pe-2"></i>Member requests</a></li>
+                                        <li class="nav-item mb-3"><a href="#"
+                                                class="nav-link d-flex align-items-center fw-medium"><i
+                                                    class="bi bi-person-check fs-4 pe-2"></i>Pending approvals</a></li>
+                                        <li class="nav-item"><a href="#"
+                                                class="nav-link d-flex align-items-center fw-medium"><i
+                                                    class="bi bi-calendar-event fs-4 pe-2"></i>Scheduled posts</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-4"></div>
             </div>
         </div>
     </main>
     <footer></footer>
     <script src="js/bootstrap.bundle.js"></script>
 </body>
+
 
 </html>
