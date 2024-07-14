@@ -1,22 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini-Project .Group-2</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
+
+<body class="text-bg-light">
     <header> </header>
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-8"></div>
-                <div class="col-12 col-lg-4"></div>
+                <div class="col-12 col-lg-8">
+                    <!--Profile and Cover-->
+                    <section>
+                        <div class="card px-3 pt-3 border-0 bg-white mb-3">
+                            <img class="mb-3" src="image/group-cover.png" alt="">
+                            <div class="profile-design d-flex align-items-center gap-2 mb-2">
+                                <div>
+                                    <img class="rounded-circle " src="image/group-profile.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <div class="profile-title d-flex align-items-center">
+                                        <h6 class="fw-medium mb-0 me-1">UX UI Design</h6>
+                                        <p class="text-success mb-0"><i class="bi bi-patch-check-fill color"></i></p>
+                                    </div>
+                                    <p class="text-light-emphasis mb-0 fs-small "><i
+                                            class="fa-solid fa-unlock-keyhole"></i> Design</p>
+                                </div>
+                            </div>
+                            <ul class="nav nav-underline">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-center pb-2 " aria-current="page" href="#">Feed</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-emphasis fw-medium text-center pb-2"
+                                        href="#">Photo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-emphasis fw-medium text-center pb-2"
+                                        href="#">Videos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light-emphasis fw-medium text-center pb-2"
+                                        href="#">Links</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card border-0 px-3 py-1">
+                            <div class="row align-items-center ">
+                                <div class="col-1 pf rounded-circle ">
+                                    <img class="rounded-circle " src="image/profile.jpg" alt="">
+                                </div>
+                                <a href="#" type="button" class=" nav-link col-11" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <button class="btn-create btn border-0 text-bg-light text-start">
+                                        Create Post
+                                    </button>
+                                    <img src="image/icon/image.svg" alt="">
+                                </a>
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header border-bottom-0">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Create Post</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row justify-content-between align-content-center">
+                                                    <div class="col-2 pf">
+                                                        <img class="rounded-circle" src="image/profile.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-10 p-0">
+                                                        <h6 class="fw-medium">Lori Ferguson</h6>
+                                                        <span class="px-2 pb-1 rounded-1 bg-primary-subtle text-primary fs-small">Admin</span>
+                                                    </div>
+                                                    <div class="col-12 mt-2">
+                                                        <textarea class="form-control shadow-none border-0 p-0 fst-normal" id="exampleFormControlTextarea1" rows="3" placeholder="Write something here ..."></textarea>
+                                                    </div>
+                                                    <div class="col-12 d-flex gap-2">
+                                                        <span class="px-3 pb-1 rounded-pill bg-success-subtle text-success fs-small"><i class="fa-regular fa-image"></i> Photo</span>
+                                                        <span class="px-3 pb-1 rounded-pill bg-warning-subtle text-warning fs-small"><i class="fa-solid fa-face-smile"></i> Emoji</span>
+                                                        <span class="px-3 pb-1 rounded-pill bg-primary-subtle text-primary fs-small"><i class="fa-regular fa-calendar-days"></i> Schedule</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer d-inline-block border-top-0">
+                                                <div class="row">
+                                                    <div class="col-6 ps-0">
+                                                        <button type="button" class="btn btn-secondary w-100"
+                                                            data-bs-dismiss="modal">Cancel</button>
+                                                    </div>
+                                                    <div class="col-6 pe-0">
+                                                        <button type="button"
+                                                            class="btn btn-primary w-100">Post</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                        </form>
+                </div>
             </div>
+            </section>
+        </div>
+        <div class="col-12 col-lg-4"></div>
+        </div>
         </div>
     </main>
     <footer></footer>
     <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+    </script>
 </body>
+
 </html>
