@@ -19,8 +19,20 @@ body {
     height: 35px;
 }
 
-.nav-item:hover .icon-circle{
-    background-color: #0dcaf0!important;
+.nav-link img.hover {
+    display: none;
+}
+
+.nav-link:hover img.default {
+    display: none;
+}
+
+.nav-link:hover img.hover {
+    display: block;
+}
+
+.nav-item:hover .icon-circle {
+    background-color: #8fddedd3 !important;
 }
 
 .nav-item:hover .title-header {
@@ -112,8 +124,8 @@ body {
 
 .card {
     border: none;
-    border-radius: 10px!important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)!important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
 .skeleton-avatar {
