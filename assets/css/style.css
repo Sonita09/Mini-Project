@@ -19,12 +19,12 @@ body {
     height: 35px;
 }
 
-/* .nav-item:hover .icon-circle{
-    background-color: #249FDA!important;
-} */
+.nav-item:hover .icon-circle{
+    background-color: #0dcaf0!important;
+}
 
 .nav-item:hover .title-header {
-    color: #249FDA !important;
+    color: #0dcaf0 !important;
 }
 
 .profile-dropdown {
