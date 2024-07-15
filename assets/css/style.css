@@ -63,14 +63,17 @@ body {
     border-bottom: 3px solid #249FDA !important;
 }
 
-.pf img {
+.pf-click{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pf img  {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-.btn-create {
-    width: 94.5%;
-}
 
 /* List Post */
 .profile {
